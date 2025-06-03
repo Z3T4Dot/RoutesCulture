@@ -2,7 +2,7 @@
 
 Una API completa desarrollada en NestJS para promover turismo cultural en zonas afectadas por el conflicto armado en Colombia.
 
-## 🌟 Características Principales
+## Características Principales
 
 - **Rutas Georreferenciadas**: Mapeo de rutas culturales con diferentes niveles de reconciliación
 - **Proyectos Comunitarios**: Conexión con talleres de artesanías, música y memoria histórica
@@ -12,7 +12,7 @@ Una API completa desarrollada en NestJS para promover turismo cultural en zonas 
 - **Notificaciones SMS**: Alertas en zonas remotas via Twilio
 - **Dashboard Analítico**: Reportes de impacto para comunidades
 
-## 🚀 Instalación y Configuración
+## Instalación y Configuración
 
 ### Prerrequisitos
 - Node.js 18+
@@ -56,14 +56,14 @@ npm run build
 npm run start:prod
 \`\`\`
 
-## 📚 Documentación API
+## Documentación API
 
 La documentación interactiva está disponible en:
 \`\`\`
 http://localhost:3000/api/docs
 \`\`\`
 
-## 🛣️ Endpoints Principales
+## Endpoints Principales
 
 ### Autenticación
 - `POST /auth/register` - Registro de usuarios
@@ -104,7 +104,7 @@ http://localhost:3000/api/docs
 - `POST /notificaciones/alerta-zona-remota` - SMS en zonas remotas
 - `POST /notificaciones/confirmacion-reserva` - Confirmación de reservas
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 \`\`\`
 src/
@@ -118,7 +118,7 @@ src/
 └── dashboard/      # Reportes y analytics
 \`\`\`
 
-## 🔧 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Framework**: NestJS con TypeScript
 - **Base de Datos**: PostgreSQL con TypeORM
@@ -129,7 +129,7 @@ src/
 - **QR Codes**: qrcode library
 - **Contenedores**: Docker & Docker Compose
 
-## 📊 Ejemplo de Flujo de Usuario
+## Ejemplo de Flujo de Usuario
 
 1. **Turista busca rutas en Antioquia**
 \`\`\`bash
@@ -175,7 +175,7 @@ POST /impacto/registrar
 }
 \`\`\`
 
-## 🌍 Consideraciones PostGIS
+## Consideraciones PostGIS
 
 La API está preparada para integrar PostGIS para búsquedas geoespaciales avanzadas:
 
@@ -189,7 +189,7 @@ WHERE ST_DWithin(
 );
 \`\`\`
 
-## 🔒 Seguridad
+## Seguridad
 
 - Autenticación JWT obligatoria para endpoints sensibles
 - Validación de permisos para testimonios
@@ -197,7 +197,7 @@ WHERE ST_DWithin(
 - Sanitización de inputs con class-validator
 - Variables de entorno para credenciales
 
-## 🚀 Despliegue
+## Despliegue
 
 ### Con Docker
 \`\`\`bash
@@ -210,34 +210,17 @@ npm run build
 npm run start:prod
 \`\`\`
 
-## 📈 Monitoreo y Métricas
+## Monitoreo y Métricas
 
 El dashboard proporciona métricas clave:
 - Familias impactadas por turismo
 - Ingresos generados por comunidades
 - Nivel de verificación de proyectos
 - Uso de códigos QR y descuentos
-- Reproducciones de testimonios
 
-## 🤝 Contribución
+## Soporte
 
-1. Fork el proyecto
-2. Crear rama feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit cambios (`git commit -am 'Agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Crear Pull Request
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para detalles.
-
-## 🆘 Soporte
-
-Para soporte técnico o preguntas:
-- Crear un issue en GitHub
-- Contactar al equipo de desarrollo
+Para preguntas:
 - Revisar la documentación en `/api/docs`
 
 ---
-
-**Desarrollado con ❤️ para la reconciliación y paz en Colombia** 🇨🇴
